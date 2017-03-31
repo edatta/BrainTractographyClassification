@@ -279,23 +279,23 @@ for item in correct_noiseind:
     correct_noise.append(test_streamlines[item])
 
 correct_noise = ((item,None, None) for item in correct_noise)
-nib.trackvis.write('/data/henry6/track_reliab_project/controls/cs280_scripts/esha_cs281a_project/'+mdl+'/correct_noise.trk',correct_noise,hdr)
+nib.trackvis.write(mdl+'/correct_noise.trk',correct_noise,hdr)
 
 correct_IFOF = ((item,None, None) for item in correct_IFOF)
-nib.trackvis.write('/data/henry6/track_reliab_project/controls/cs280_scripts/esha_cs281a_project/'+mdl+'/correct_IFOF.trk',correct_IFOF,hdr)
+nib.trackvis.write(mdl+'/correct_IFOF.trk',correct_IFOF,hdr)
 
 incorrect_IFOF = ((item,None, None) for item in incorrect_IFOF)
-nib.trackvis.write('/data/henry6/track_reliab_project/controls/cs280_scripts/esha_cs281a_project/'+mdl+'/incorrect_IFOF.trk',incorrect_IFOF,hdr)
+nib.trackvis.write(mdl+'/incorrect_IFOF.trk',incorrect_IFOF,hdr)
 
 correct_UNC = ((item,None, None) for item in correct_UNC)
-nib.trackvis.write('/data/henry6/track_reliab_project/controls/cs280_scripts/esha_cs281a_project/'+mdl+'/correct_UNC.trk',correct_UNC,hdr)
+nib.trackvis.write(mdl+'/correct_UNC.trk',correct_UNC,hdr)
 
 incorrect_UNC = ((item,None, None) for item in incorrect_UNC)
-nib.trackvis.write('/data/henry6/track_reliab_project/controls/cs280_scripts/esha_cs281a_project/'+mdl+'/incorrect_UNC.trk',incorrect_UNC,hdr)
+nib.trackvis.write(mdl+'/incorrect_UNC.trk',incorrect_UNC,hdr)
 
 noiseas_IFOF = ((item,None, None) for item in noiseas_IFOF)
-nib.trackvis.write('/data/henry6/track_reliab_project/controls/cs280_scripts/esha_cs281a_project/'+mdl+'/noiseas_IFOF.trk',noiseas_IFOF,hdr)
+nib.trackvis.write(mdl+'/noiseas_IFOF.trk',noiseas_IFOF,hdr)
 
 noiseas_UNC = ((item,None, None) for item in noiseas_UNC)
-nib.trackvis.write('/data/henry6/track_reliab_project/controls/cs280_scripts/esha_cs281a_project/'+mdl+'/noiseas_UNC.trk',noiseas_UNC,hdr)
+nib.trackvis.write(mdl+'/noiseas_UNC.trk',noiseas_UNC,hdr)
 
