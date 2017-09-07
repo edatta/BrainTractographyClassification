@@ -25,6 +25,16 @@ The feature vector ultimately used to represent each streamline included the len
 * Logistical Reggression with Stochastic Gradient Descent
 
 ## Results
+### Overview
+![ResultChart](pics/braintract_results.jpg)
+### Built in SVM
+![SVM](pics/builtinsvm.jpg)
+### Gaussian Class Conditional Densities Model
+![GaussianCC](pics/gaussian.jpg)
+### Gaussian Naive Bayes Model
+![GaussianNB](pics/Gaussian_nb.jpg)
+### Logistical Regression with Stochastic Gradient Descent
+![Logistical](pics/logistic.jpg)
 
 ### Discussion
 The Gaussian Class Conditional Densities model has the best overall accuracy and also the best specificity. However, this may be a poor and risky choice for this application. The algorithm only correctly identifies a small percentage of the streamlines. If a doctor were to use these results to plan a brain surgery, the chance of accidentally cutting into an important motor or language tract would be high.
