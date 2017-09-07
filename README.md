@@ -1,9 +1,11 @@
 # BrainTractographyClassification
 
 This work was done as part of UC Berkeley's class CS281A (Statistical Learning Methods) in Spring 2014.
+
 This work is also related to this abstract from ISMRM 2015:
 Automatic Classification of Brain Tractography Data, E DAtta, K Jordan, E Cavezasi, N Papinutto, W Stern, and RG Henry, 2015.
 dev.ismrm.org/2015/2851.html
+
 This work is also related to this abstract from HBM 2015:
 Variability in Automatic and Mannual Classification of Brain Tractography Data, E DAtta, K Jordan, E Cavezasi, N Papinutto, W Stern, and RG Henry, 2015.
 
