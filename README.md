@@ -27,6 +27,12 @@ The feature vector ultimately used to represent each streamline included the len
 ## Results
 ### Overview
 ![ResultChart](pics/braintract_results.jpg)
+### Discussion
+The Gaussian Class Conditional Densities model has the best overall accuracy and also the best specificity. However, this may be a poor and risky choice for this application. The algorithm only correctly identifies a small percentage of the streamlines. If a doctor were to use these results to plan a brain surgery, the chance of accidentally cutting into an important motor or language tract would be high.
+
+The Gaussian Naïve Bayes model has the best sensitivity. This would be a very conservative estimate for this application. The algorithm catches nearly all of the important streamlines, but it also includes a lot of noise streamlines as well. The surgeon could be fairly confident that he would be able to avoid the important areas when cutting into the brain. However, this approach is also prohibitive and may unnecessarily prevent the doctor from performing needed surgery in certain areas.
+
+The Logistic Regression model with stochastic gradient descent seems to be the best overall approach for pre-surgical mapping. The sensitivity and specificity are both fairly high, so there is a good balance between the risk of underestimating and overestimating the tract.
 ### Built in SVM
 ![SVM](pics/builtinsvm.jpg)
 ### Gaussian Class Conditional Densities Model
@@ -35,11 +41,4 @@ The feature vector ultimately used to represent each streamline included the len
 ![GaussianNB](pics/Gaussian_nb.jpg)
 ### Logistical Regression with Stochastic Gradient Descent
 ![Logistical](pics/logistic.jpg)
-
-### Discussion
-The Gaussian Class Conditional Densities model has the best overall accuracy and also the best specificity. However, this may be a poor and risky choice for this application. The algorithm only correctly identifies a small percentage of the streamlines. If a doctor were to use these results to plan a brain surgery, the chance of accidentally cutting into an important motor or language tract would be high.
-
-The Gaussian Naïve Bayes model has the best sensitivity. This would be a very conservative estimate for this application. The algorithm catches nearly all of the important streamlines, but it also includes a lot of noise streamlines as well. The surgeon could be fairly confident that he would be able to avoid the important areas when cutting into the brain. However, this approach is also prohibitive and may unnecessarily prevent the doctor from performing needed surgery in certain areas.
-
-The Logistic Regression model with stochastic gradient descent seems to be the best overall approach for pre-surgical mapping. The sensitivity and specificity are both fairly high, so there is a good balance between the risk of underestimating and overestimating the tract.
 
