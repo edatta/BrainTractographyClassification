@@ -10,8 +10,8 @@ This work is also related to this abstract from HBM 2015:
 Variability in Automatic and Mannual Classification of Brain Tractography Data, E Datta, K Jordan, E Cavezasi, N Papinutto, W Stern, and RG Henry, 2015.
 
 ## Overview
-
-The purpose of this project is to compare different methods for classification of human brain tractography data. Human brain tractography data is often classified for use in pre-neurosurgical planning to map important brain connections that are considered critical to motor and language function.  Traditionally, this process is performed manually by trained experts, so it would be of great value to have an automatic classification process.  In this project, each method is used to classify a set of tracts from the left External Capsule into three categories: Inferior Fronto-Occipital Fasciculus (IFOF), Uncinate Fasciculus, and noise.
+![Overview](pics/overview.jpg)
+The purpose of this project is to compare different methods for classification of human brain tractography data. Human brain tractography data is often classified for use in pre-neurosurgical planning to map important brain connections that are considered critical to motor and language function.  Traditionally, this process is performed manually by trained experts, so it would be of great value to have an automatic classification process.  In this project, each method is used to classify a set of tracts from the left External Capsule into three categories: Inferior Fronto-Occipital Fasciculus (IFOF), Uncinate Fasciculus, and noise.  In the above figure, the picture on the left shows the input set of tracts and the picture on the right shows the desired output of the segmented IFOF.
 
 ## Methods
 
